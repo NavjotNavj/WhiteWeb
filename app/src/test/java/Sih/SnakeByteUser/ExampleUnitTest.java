@@ -1,4 +1,4 @@
-package Sih.SnakeByte;
+package Sih.SnakeByteUser;
 
 import org.junit.Test;
 

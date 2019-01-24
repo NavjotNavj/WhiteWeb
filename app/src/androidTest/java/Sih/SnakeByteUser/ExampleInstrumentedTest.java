@@ -1,4 +1,4 @@
-package Sih.SnakeByte;
+package Sih.SnakeByteUser;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
