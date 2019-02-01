@@ -26,12 +26,14 @@
             app:expandedTitleTextAppearance="@android:color/transparent"
             android:layout_height="550dp">
 
-            <ImageView
-                android:id="@+id/imageThumb"
-                android:contentDescription="WALLIVE wallpaper's"
-                android:scaleType="centerCrop"
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                tools:context=".ReportActivity"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -63,6 +65,7 @@
 
 
                 <EditText
+                    android:id="@+id/nameReport"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -70,6 +73,7 @@
                     android:hint="Enter your name here"
                     android:textSize="20sp" />
                 <EditText
+                    android:id="@+id/descriptionReport"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"

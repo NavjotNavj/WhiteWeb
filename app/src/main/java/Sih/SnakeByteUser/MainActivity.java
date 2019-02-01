@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void locatePoliceCall(View view){
-    startActivity(new Intent(this, LocatePoliceActivity .class));
+    startActivity(new Intent(this, LocatePoliceActivity.class));
     }
 
 }

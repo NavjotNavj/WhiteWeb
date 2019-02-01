@@ -22,6 +22,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
+import Sih.SnakeByteUser.Common.Common;
 import Sih.SnakeByteUser.Model.Rider;
 import dmax.dialog.SpotsDialog;
 
@@ -45,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseDatabase.getInstance();
-        users = db.getReference("Users");
+        users = db.getReference(Common.user_rider_tb1);
 
     }
     public void showRegisterDialog(View view) {
